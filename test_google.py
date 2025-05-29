@@ -1,5 +1,6 @@
 from selene import browser, have
 
+
 def test_search_positive():
     browser.open('https://google.com')
     browser.element('[name="q"]').type('qa.guru').press_enter()

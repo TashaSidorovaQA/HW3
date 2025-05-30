@@ -1,3 +1,6 @@
+import pytest
+from selene import browser
+
 @pytest.fixture(autouse=True)
 def browser_settings():
     browser.config.window_width = 1000
